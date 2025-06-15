@@ -13,88 +13,98 @@
 
     <header id="top">
 
-        <div>
+        <a href="#" class="site-name">Acheron</a>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="environment.html">Environment</a></li>
-                    <li><a href="credits.html">Credits</a></li>
-                </ul>
-            </nav>
-
-        </div>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="environment.html">Environment</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
 
     </header>
 
     <main>
 
-        <section>
+        <section class="banner">
             <h1>Acheron</h1>
             <video src="images/planet-video.mp4" muted loop autoplay></video>
         </section>
 
-        <section>
-            <h2>Welcome to Acheron</h2>
-            <p>Acheron, also known as LV-426, is a moon orbiting the planet Calpamos. It is the sister moon of LV-223.
-                Located in the Zeta II Reticuli System, it is 39 lightyears from Earth. Although Acheron has remained
-                abandoned since the 22nd century, it has a legacy that is worth remembering. We hold hope that one day,
-                future generations will be able to live here in peace. Acheron's hope endures!</p>
-        </section>
-
-        <section>
+        <div class="quote">
             <blockquote cite="https://avp.fandom.com/wiki/Acheron_(LV-426)">
                 "Day on Acheron was dim twlight, night was darker than the farthest reaches of interstellar space,
                 because not even stars shone through its dense atmosphere to soften the barren surface with twinkling
                 light."
             </blockquote>
             <cite>Alan Dean Foster, Aliens: A Novel</cite>
-        </section>
+        </div>
 
-        <section>
-            <h2>Stats</h2>
-            <ul>
-                <li>12,000 km diameter</li>
-                <li>2 hour rotational period</li>
-                <li>About 8.42 m/s² surface gravity (0.86 of Earth's)</li>
-            </ul>
-        </section>
+        <div class="grid-1">
 
-        <section>
-            <h2>Contact Us!</h2>
-            <p>While Extrasolar Colonization Administration regulations prevent humans from landing or settling on
-                Acheron,
-                travelers can experience this historic moon safely with our flyby tour! Fill out our contact form to
-                book a
-                tour now:</p>
+            <section class="grid-info1">
+                <h2>Welcome to Acheron</h2>
+                <p>Acheron, also known as LV-426, is a moon orbiting the planet Calpamos. It is the sister moon of
+                    LV-223.
+                    Located in the Zeta II Reticuli System, it is 39 lightyears from Earth. Although Acheron has
+                    remained
+                    abandoned since the 22nd century, it has a legacy that is worth remembering. We hold hope that one
+                    day,
+                    future generations will be able to live here in peace. Acheron's hope endures!</p>
+            </section>
 
-            <form action="#" method="post" name="contact">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user-name" placeholder="Enter your name" required>
+            <section class="grid-info2">
+                <h2>Stats</h2>
+                <ul>
+                    <li>12,000 km diameter</li>
+                    <li>2 hour rotational period</li>
+                    <li>About 8.42 m/s² surface gravity (0.86 of Earth's)</li>
+                </ul>
+            </section>
+        </div>
 
-                <label for="pronouns">Pronouns:</label>
-                <input type="text" id="pronouns" name="user-pronouns" placeholder="Enter your pronouns">
+        <div class="grid-contact">
+            <section class="grid-form">
+                <h2>Contact Us!</h2>
+                <p>While Extrasolar Colonization Administration regulations prevent humans from landing or settling on
+                    Acheron,
+                    travelers can experience this historic moon safely with our flyby tour! Fill out our contact form to
+                    book a
+                    tour now:</p>
 
-                <label for="email">Email:</label>
-                <input type="email" name="user-email" id="email" placeholder="Enter your email" required>
+                <form action="#" method="post" name="contact">
 
-                <label for="planet">Planet:</label>
-                <input type="text" name="home-planet" id="planet" placeholder="Enter your home planet">
+                    <div class="form1">
+                        <label for="name" class="form-field">Name:</label>
+                        <input type="text" id="name" name="user-name" required>
 
-                <label for="system">System:</label>
-                <input type="text" name="star-system" id="system" placeholder="Enter your star system">
+                        <label for="email" class="form-field">Email:</label>
+                        <input type="email" name="user-email" id="email" required>
+                    </div>
 
-                <input type="submit" value="Submit">
+                    <div class="form2">
+                        <label for="planet" class="form-field">Planet:</label>
+                        <input type="text" name="home-planet" id="planet">
 
-            </form>
+                        <label for="system" class="form-field">System:</label>
+                        <input type="text" name="star-system" id="system">
+                    </div>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </section>
+
             <img src="images/space-traveler-exploring-resize.jpg" alt="space traveler exploring">
-        </section>
 
-        <p id="back-to-top"><a href="#top">Back to Top</a></p>
+        </div>
+
     </main>
 
     <footer>
+        <p id="back-to-top"><a href="#top">Back to Top</a></p>
         <p>&copy; Quinn Cooper | 2025</p>
     </footer>
 
