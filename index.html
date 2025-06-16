@@ -5,13 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acheron</title>
+
+    <!-- Header font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
-    <header id="top">
+    <header id="to-top">
 
         <a href="#" class="site-name">Acheron</a>
 
@@ -65,46 +80,46 @@
             </section>
         </div>
 
+
+
+
         <div class="grid-contact">
-            <section class="grid-form">
+            <article class="contact-us">
                 <h2>Contact Us!</h2>
-                <p>While Extrasolar Colonization Administration regulations prevent humans from landing or settling on
+                <p>While ECA regulations prevent humans from landing or settling on
                     Acheron,
                     travelers can experience this historic moon safely with our flyby tour! Fill out our contact form to
                     book a
                     tour now:</p>
 
+            <!-- <article class="form">  -->
                 <form action="#" method="post" name="contact">
+                    <label for="name" class="form-field">Name:</label>
+                    <input type="text" id="name" name="user-name" required>
 
-                    <div class="form1">
-                        <label for="name" class="form-field">Name:</label>
-                        <input type="text" id="name" name="user-name" required>
+                    <label for="email" class="form-field">Email:</label>
+                    <input type="email" name="user-email" id="email" required>
 
-                        <label for="email" class="form-field">Email:</label>
-                        <input type="email" name="user-email" id="email" required>
-                    </div>
+                    <label for="planet" class="form-field">Planet:</label>
+                    <input type="text" name="home-planet" id="planet">
 
-                    <div class="form2">
-                        <label for="planet" class="form-field">Planet:</label>
-                        <input type="text" name="home-planet" id="planet">
-
-                        <label for="system" class="form-field">System:</label>
-                        <input type="text" name="star-system" id="system">
-                    </div>
+                    <label for="system" class="form-field">System:</label>
+                    <input type="text" name="star-system" id="system">
 
                     <input type="submit" value="Submit">
 
                 </form>
-            </section>
+            </article>
 
-            <img src="images/space-traveler-exploring-resize.jpg" alt="space traveler exploring">
-
+            <article>
+                <img src="images/space-traveler-exploring-resize.jpg" alt="space traveler exploring">
+            </article>
         </div>
 
     </main>
 
     <footer>
-        <p id="back-to-top"><a href="#top">Back to Top</a></p>
+        <p id="to-top"><a href="#top">Back to Top</a></p>
         <p>&copy; Quinn Cooper | 2025</p>
     </footer>
 

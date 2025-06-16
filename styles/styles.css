@@ -10,8 +10,10 @@
     - Links
 # Components
     - Header
-    - Banner
     - Main
+        *Banner
+        *Blockquote
+        *Grid
     - Footer
 ------------------------------------------------ */
 
@@ -19,17 +21,19 @@
 # BASE------------------------------------------ 
 ------------------------------------------------ */
 
-
 /* Typography ---------------------------------- */
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: "Saira", sans-serif;
+    font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0 auto;
+    background-color: #271228;
     /* max-width: fit-content; */
 }
 
@@ -39,12 +43,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 550;
     text-align: center;
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 4.9rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -54,7 +60,16 @@ h2 {
 
 p {
     max-width: fit-content;
-    margin: 10px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    /* padding: 10px; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Links -------------------------------------*/
@@ -117,19 +132,19 @@ header {
 
 /* Main ---------------------------------------*/
 
-/* Banner*/
-.banner {
-    background-color: #ffffff;
-}
-
+/* Banner ----- */
 .banner h1 {
-    color: #ffffff;
+    color: white;
+    text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     position: absolute;
+    right: 0;
+    left: 0;
     left: 400px;
     right: 400px;
     top: 10px;
-
 }
+
+/* ------------Neon effect from CSS Tricks */
 
 video {
     object-fit: cover;
@@ -139,61 +154,73 @@ video {
     padding-bottom: 0px;
 }
 
-/* Blockquote*/
+/* Blockquote ----- */
 .quote {
-    backdrop-filter: blur(5px);
-    z-index: 1;
-    background-color: #ffffff;
+    color: white;
     padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-/* Grid --------------------------------------*/
+/* Grid - Info ----- */
+
+div.grid-contact {
+    display: flex;
+}
 
 .grid-1 {
     display: flex;
     flex-wrap: wrap;
     justify-self: center;
     padding-bottom: 30px;
+    margin-top: 20px;
 }
 
 .grid-info1 {
-    background-color: #331e2f;
-    color: #dae399;
+    color: #bfd084;
+    border: 2px solid #bfd084;
     border-radius: 25px 25px 0px 0px;
-    margin-bottom: 0px;
+    box-shadow: 0 0 5px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+    margin-bottom: 20px;
 }
 
 .grid-info2 {
-    margin-top: 0px;
     background-color: #bfd084;
-    color: #271228;
+    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+    margin-bottom: 20px;
 }
+
+/* Grid - Contact ----- */
 
 div.grid-contact {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 30px;
 }
 
-.grid-form {
+.contact-us {
+    display: block;
     background-color: #bfd084;
     border-radius: 25px 25px 0px 0px;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 img {
+    display: block;
     object-fit: cover;
     height: 400px;
     width: 400px;
     border-radius: 0px 0px 25px 25px;
-    padding-bottom: 10px;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 @media (min-width: 50rem) {
 
     .grid-1 {
         display: grid;
-        /* grid-template-columns: 1fr 1fr; */
-        grid-template-columns: 850px 300px;
+        grid-template-columns: 800px 350px;
     }
 
     .grid-info1 {
@@ -206,12 +233,16 @@ img {
         border-radius: 0px 25px 25px 0px;
     }
 
-    .grid-form {
+    .contact-us {
         border-radius: 25px 0px 0px 25px;
+        margin-bottom: 20px;
     }
 
     img {
         border-radius: 0px 25px 25px 0px;
+        margin-bottom: 20px;
+        height: 600px;
+        width: 400px;
     }
 
     .grid-contact {
@@ -220,65 +251,107 @@ img {
         grid-template-columns: 850px 300px;
         /* padding: 10px 20px; */
     }
+
+    /* --------------------------------------- */
+
+    div.grid-contact {
+        display: grid;
+        grid-template-columns: 850px 300px;
+        /* grid-template-rows: repeat(3, 1fr); */
+    }
+
+    /* img {
+        display: block;
+        object-fit: cover;
+        height: 600px;
+        width: 400px;
+        border-radius: 0px 0px 25px 25px;
+        box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+    } */
+
 }
 
-/* Form ---------------------------------------*/
+/* Form ----- */
 form {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
     justify-self: left;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.form-field {
+form label {
+    display: block;
+}
+
+form input {
     display: block;
 }
 
 input[type=text] {
-    width: 40%;
-    box-sizing: border-box;
+    width: 100%;
+    /* box-sizing: border-box; */
     padding: 5px;
-    margin: 10px 20px;
+    margin: 10px;
     border: 1px solid #0f1c33;
     border-radius: 8px;
+    vertical-align: middle;
 }
 
 input[type=email] {
-    width: 40%;
-    box-sizing: border-box;
+    width: 100%;
+    /* box-sizing: border-box; */
     padding: 5px;
-    margin: 10px 20px;
+    margin: 10px;
     border: 1px solid #0f1c33;
     border-radius: 8px;
+    vertical-align: middle;
 }
 
 input[type=submit] {
     width: 30%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 8px;
-    margin: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 1px solid #0f1c33;
     border-radius: 8px;
+    align-self: left;
 }
 
-@media (min-width: 50rem) {
-    div.form1 {
-    display: flex;
-}
+@media (min-width: 50em) {
+    input[type=text] {
+    width: 100%;
+    }
+    
+    input[type=email] {
+        width: 100%;
+    }
 
-div.form2 {
-    display: flex;
-}
+    input[type=submit] {
+        align-self: center;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #141414;
+        color: #fff;
+    }
+
+    /* Forms CSS code snippets - W3Schools */
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #000001;
     color: white;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    margin-top: 20px;
+    right: 0;
+    left: 0;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 50em) {
     footer {
         display: flex;
         justify-content: space-evenly;
