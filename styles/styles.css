@@ -32,7 +32,7 @@ body {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.5;
-    margin: 0 auto;
+    max-width: 100%;
     background-color: #271228;
 }
 
@@ -61,8 +61,6 @@ h2 {
 
 p {
     max-width: fit-content;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 ul {
@@ -77,18 +75,23 @@ ul {
     padding: 10px;
 }
 
+footer a {
+    padding: 10px;
+}
+
 a:link {
     color: #eceee3;
     text-decoration: none;
 }
 
 a:visited {
-    color: #f6ee64;
+    color: #f7de61;
     text-decoration: none;
 }
 
 a:hover {
     color: #f8a618;
+    border: 2px solid #6b35a1;
     text-decoration: none;
 }
 
@@ -98,7 +101,7 @@ a:active {
 }
 
 a:focus {
-    color: #cfdc70;
+    color: #b376af;
     text-decoration: none;
 }
 
@@ -110,6 +113,7 @@ a:focus {
 
 header {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -123,36 +127,63 @@ header {
 
 .site-name {
     margin-left: 20px;
+    padding: 10px;
 }
 
 .nav-menu ul {
-    display: flex;
     list-style: none;
+}
+
+@media (min-width: 50em) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* Main ---------------------------------------*/
 
 /* Banner ----- */
 
-.banner h1 {
-    color: white;
-    text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
-    position: absolute;
-    right: 0;
-    left: 0;
-    left: 400px;
-    right: 400px;
-    top: 10px;
+.banner {
+    position: relative;
 }
 
-/* ------------Neon effect from CSS Tricks */
+.banner h1 {
+    position: absolute;
+    width: fit-content;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
+}
+
+/* ------------ Neon effect from CSS Tricks */
 
 video {
     object-fit: cover;
+    display: block;
     object-position: 50% 50%;
     width: 100%;
-    height: 20%;
-    padding-bottom: 0px;
+    height: 20rem;
+}
+
+@media (min-width: 50em) {
+    .banner h1 {
+        top: 80px;
+    }
 }
 
 /* Blockquote ----- */
@@ -166,26 +197,29 @@ video {
 
 /* Grid - Info ----- */
 
-.grid-1 section {
+.grid-1 {
     display: flex;
     flex-wrap: wrap;
-    /* margin-top: 40px; */
+}
+
+.grid-info1,
+.grid-info2 {
+    margin: 0 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #bfd084;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 .grid-info1 {
     color: #bfd084;
-    border: 2px solid #bfd084;
     border-radius: 25px 25px 0px 0px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
-    /* margin-top: 20px; */
+
 }
 
 .grid-info2 {
     background-color: #bfd084;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
-    /* margin-bottom: 20px; */
 }
 
 @media (min-width: 50em) {
@@ -199,34 +233,40 @@ video {
 
     .grid-info1 {
         border-radius: 25px 0px 0px 25px;
+        margin: 20px 0px;
+        box-sizing: border-box;
     }
 
     .grid-info2 {
         border-radius: 0px 25px 25px 0px;
+        margin: 20px 0px;
+        box-sizing: border-box;
     }
 }
 
 /* Grid - Contact ----- */
 
-div.grid-contact {
+.grid-contact {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
-    /* justify-content: center; */
 }
 
 .contact-us {
     display: block;
+    padding: 10px;
     background-color: #bfd084;
+    border: 2px solid #bfd084;
     border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
-.grid-image img {
+img.home-image {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
+    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
@@ -241,28 +281,16 @@ div.grid-contact {
 
     .contact-us {
         border-radius: 25px 0px 0px 25px;
-        margin-bottom: 20px;
-        margin-top: 20px;
     }
 
-    .grid-image img {
+    img.home-image {
         display: block;
         width: 100%;
-        height: 600px;
+        height: 620px;
         object-fit: cover;
-        margin-bottom: 20px;
-        margin-top: 20px;
         border-radius: 0px 25px 25px 0px;
         box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
     }
-
-    /* img {
-        border-radius: 0px 25px 25px 0px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        height: 600px;
-        width: 400px;
-    } */
 
     div.grid-contact {
         display: grid;
@@ -271,11 +299,10 @@ div.grid-contact {
     }
 }
 
-
 /* Form ----- */
 form {
+    display: block;
     justify-self: left;
-    position: relative;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -290,31 +317,31 @@ form input {
 
 input[type=text] {
     width: 100%;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 5px;
     margin: 10px;
-    border: 1px solid #0f1c33;
+    border: 1px solid #33074d;
     border-radius: 8px;
     vertical-align: middle;
 }
 
 input[type=email] {
     width: 100%;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 5px;
     margin: 10px;
-    border: 1px solid #0f1c33;
+    border: 1px solid #33074d;
     border-radius: 8px;
     vertical-align: middle;
 }
 
 input[type=submit] {
     width: 30%;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid #0f1c33;
+    border: 1px solid #33074d;
     border-radius: 8px;
     align-self: left;
 }
@@ -338,13 +365,21 @@ input[type=submit] {
         color: #fff;
     }
 
-    /* Forms CSS code snippets - W3Schools */
+    input[type=text]:focus {
+        border: 2px dotted #c17d08;
+    }
+
+    /* ---------------- Form styles from W3Schools */
 }
+
+/* Footer -------------------------------------*/
 
 footer {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: #000001;
     color: white;
     margin-top: 20px;
@@ -355,6 +390,7 @@ footer {
 @media (min-width: 50em) {
     footer {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 }

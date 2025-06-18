@@ -1,3 +1,255 @@
-body {
-    
+/* -----------------------------------------------
+>>> TABLE OF CONTENTS 
+--------------------------------------------------
+# Generic (Normalize.css)
+    - Normalize
+    - Box Sizing
+    - Media Width
+# Base
+    - Typography
+    - Links
+# Components
+    - Header
+    - Main
+        *Banner
+        *Blockquote
+        *Grid
+    - Footer
+------------------------------------------------ */
+
+/* ---------------------------------------------
+# BASE------------------------------------------ 
+------------------------------------------------ */
+
+/* Typography ---------------------------------- */
+
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: "Saira", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 100%;
+    background-color: #271228;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 550;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.9rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p {
+    max-width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+}
+
+/* Links -------------------------------------*/
+
+.nav-menu a {
+    text-decoration: none;
+}
+
+header a,
+footer a {
+    padding: 10px;
+}
+
+a:link {
+    color: #eceee3;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f7de61;
+    text-decoration: none;
+}
+
+header a:hover,
+footer a:hover {
+    color: #f8a618;
+    border: 2px solid #6b35a1;
+    text-decoration: none;
+}
+
+a:active {
+    color: #cfdc70;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #b376af;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------
+# COMPONENTS------------------------------------ 
+------------------------------------------------ */
+
+/* Header ------------------------------------*/
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000001;
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+@media (min-width: 50em) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 10px;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Main ---------------------------------------*/
+
+h1 {
+    color: white;
+    text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
+    text-align: center;
+    top: 200px;
+}
+
+/* Credits Grid */
+
+.credits {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.credits-home,
+.credits-history,
+.credits-env {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #bfd084;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+}
+
+.credits-home {
+    color: #bfd084;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.credits-history {
+    color: #bfd084;
+}
+
+.credits-env {
+    color: #bfd084;
+    border-radius: 0px 0px 25px 25px;
+}
+
+table {
+        table-layout: auto;
+    }
+
+    tr,
+    td {
+        padding: 10px;
+    }
+
+@media (min-width: 50em) {
+
+    .credits {
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 600px;
+    }
+
+    .credits-home {
+        border-radius: 25px 25px 0px 0px;
+        box-sizing: border-box;
+    }
+
+    .credits-history {
+        box-sizing: border-box;
+    }
+
+    .credits-env {
+        border-radius: 0px 0px 25px 25px;
+        box-sizing: border-box;
+    }
+
+    table {
+        justify-self: center;
+        width: 70%;
+        table-layout: fixed;
+    }
+
+    tr,
+    td {
+        padding: 10px;
+    }
+    /* ----- Table styles from MDN Docs & W3Schools */
+}
+
+/* Footer -------------------------------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000001;
+    color: white;
+    margin-top: 20px;
+    right: 0;
+    left: 0;
+}
+
+@media (min-width: 50em) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
