@@ -38,6 +38,7 @@
     right: 0;
     left: 0;
     margin: 0 auto;
+    font-size: clamp(3rem, 4vw, 4rem);
     text-align: center;
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
@@ -55,7 +56,7 @@ video {
 
 @media (min-width: 50em) {
     .banner h1 {
-        top: 40px;
+        top: 60px;
     }
 
     video {
