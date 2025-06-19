@@ -61,6 +61,7 @@ h2 {
 
 p {
     max-width: fit-content;
+    margin: 10px 20px;
 }
 
 ul {
@@ -69,15 +70,6 @@ ul {
 }
 
 /* Links -------------------------------------*/
-
-.nav-menu a {
-    text-decoration: none;
-    padding: 10px;
-}
-
-footer a {
-    padding: 10px;
-}
 
 a:link {
     color: #eceee3;
@@ -127,11 +119,16 @@ header {
 
 .site-name {
     margin-left: 20px;
-    padding: 10px;
+    padding: 3px;
 }
 
 .nav-menu ul {
     list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    padding: 3px;
 }
 
 @media (min-width: 50em) {
@@ -142,15 +139,25 @@ header {
         padding-top: 10px;
     }
 
+    .site-name {
+        padding: 10px;
+    }
+
     .nav-menu ul {
         display: flex;
         list-style: none;
         padding: 0;
         margin: 0;
     }
+
+    .nav-menu a {
+        padding: 10px;
+    }
 }
 
 /* Main ---------------------------------------*/
+
+
 
 /* Banner ----- */
 
@@ -161,7 +168,7 @@ header {
 .banner h1 {
     position: absolute;
     width: fit-content;
-    top: 100px;
+    top: 150px;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -182,24 +189,39 @@ video {
 
 @media (min-width: 50em) {
     .banner h1 {
-        top: 80px;
+        top: 40px;
+    }
+
+    video {
+        object-fit: cover;
+        object-position: 50% 50%;
+        display: block;
+        width: 100%;
+        height: 30rem;
     }
 }
 
 /* Blockquote ----- */
 
 .quote {
+    text-align: left;
     color: white;
     padding-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 20px;
+}
+
+@media (min-width: 50em) {
+    .quote {
+        text-align: left;
+        margin: 0 70px;
+    }
 }
 
 /* Grid - Info ----- */
 
 .grid-1 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .grid-info1,
@@ -227,8 +249,9 @@ video {
     .grid-1 {
         display: grid;
         justify-self: center;
-        grid-template-columns: 800px 350px;
+        grid-template-columns: 2fr 1fr;
         align-items: stretch;
+        margin: 20px 40px;
     }
 
     .grid-info1 {
@@ -249,7 +272,7 @@ video {
 .grid-contact {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin: 40px 20px 0;
 }
 
 .contact-us {
@@ -261,11 +284,14 @@ video {
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
-img.home-image {
+.home-image {
+    /* height: 100%;
+    object-position: 60% 90%; */
+
     display: block;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: fill;
     border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
@@ -276,7 +302,8 @@ img.home-image {
     .grid-contact {
         display: grid;
         justify-self: center;
-        grid-template-columns: 700px 450px;
+        grid-template-columns: 2fr 1fr;
+        margin: 20px 40px;
     }
 
     .contact-us {
@@ -286,8 +313,9 @@ img.home-image {
     img.home-image {
         display: block;
         width: 100%;
-        height: 620px;
+        height: 100%;
         object-fit: cover;
+        object-position: 35% 50%;
         border-radius: 0px 25px 25px 0px;
         box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
     }
@@ -295,7 +323,7 @@ img.home-image {
     div.grid-contact {
         display: grid;
         justify-self: center;
-        grid-template-columns: 700px 450px;
+        grid-template-columns: 2fr 1fr;
     }
 }
 
@@ -319,7 +347,7 @@ input[type=text] {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    margin: 10px;
+    margin: 10px 0px;
     border: 1px solid #33074d;
     border-radius: 8px;
     vertical-align: middle;
@@ -329,14 +357,14 @@ input[type=email] {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    margin: 10px;
+    margin: 10px 0px;
     border: 1px solid #33074d;
     border-radius: 8px;
     vertical-align: middle;
 }
 
 input[type=submit] {
-    width: 30%;
+    width: 50%;
     box-sizing: border-box;
     padding: 8px;
     margin-top: 10px;
@@ -382,9 +410,13 @@ footer {
     justify-content: space-between;
     background-color: #000001;
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
     right: 0;
     left: 0;
+}
+
+footer a {
+    padding: 3px;
 }
 
 @media (min-width: 50em) {
@@ -392,5 +424,9 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    footer a {
+        padding: 10px;
     }
 }

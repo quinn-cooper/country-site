@@ -52,31 +52,20 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
 p {
     max-width: fit-content;
+    margin-left: 20px;
+}
+
+ul {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-ul {
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
-}
-
 /* Links -------------------------------------*/
 
-.nav-menu a {
-    text-decoration: none;
-}
-
-header a,
 footer a {
-    padding: 10px;
+    padding: 3px;
 }
 
 a:link {
@@ -126,8 +115,18 @@ header {
     z-index: 3;
 }
 
+.site-name {
+    margin-left: 20px;
+    padding: 10px;
+}
+
 .nav-menu ul {
     list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    padding: 3px;
 }
 
 @media (min-width: 50em) {
@@ -138,11 +137,19 @@ header {
         padding-top: 10px;
     }
 
+    .site-name {
+        padding: 10px;
+    }
+
     .nav-menu ul {
         display: flex;
         list-style: none;
         padding: 0;
         margin: 0;
+    }
+
+    .nav-menu a {
+        padding: 10px;
     }
 }
 
@@ -152,81 +159,83 @@ h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
-    top: 200px;
+    padding-top: 100px;
+}
+
+@media (min-width: 50em) {
+    h1 {
+        padding-top: 0;
+    }
 }
 
 /* Credits Grid */
 
-.credits {
+div.credits {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
+    margin: 40px 20px 0;
 }
 
-.credits-home,
-.credits-history,
-.credits-env {
-    padding: 10px;
+.credits-media,
+.credits-info {
+    margin: 0 20px;
+    display: block;
     box-sizing: border-box;
     border: 2px solid #bfd084;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
-.credits-home {
+.credits-media {
     color: #bfd084;
     border-radius: 25px 25px 0px 0px;
 }
 
-.credits-history {
-    color: #bfd084;
-}
-
-.credits-env {
+.credits-info {
     color: #bfd084;
     border-radius: 0px 0px 25px 25px;
 }
 
 table {
-        table-layout: auto;
-    }
+    table-layout: auto;
+}
 
-    tr,
-    td {
-        padding: 10px;
-    }
+tr,
+th,
+td {
+    padding: 10px;
+}
 
 @media (min-width: 50em) {
 
-    .credits {
+    div.credits {
         display: grid;
         justify-self: center;
-        grid-template-columns: 600px;
+        grid-template-columns: 70%;
+        margin: 20px 40px;
     }
 
-    .credits-home {
+    .credits-media {
         border-radius: 25px 25px 0px 0px;
         box-sizing: border-box;
     }
 
-    .credits-history {
-        box-sizing: border-box;
-    }
-
-    .credits-env {
+    .credits-info {
         border-radius: 0px 0px 25px 25px;
         box-sizing: border-box;
     }
 
     table {
         justify-self: center;
-        width: 70%;
+        width: 90%;
         table-layout: fixed;
     }
 
     tr,
+    th,
     td {
         padding: 10px;
     }
+
     /* ----- Table styles from MDN Docs & W3Schools */
 }
 
@@ -252,4 +261,3 @@ footer {
         justify-content: space-evenly;
     }
 }
-
