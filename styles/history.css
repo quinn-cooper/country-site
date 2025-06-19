@@ -22,11 +22,23 @@
 # BASE------------------------------------------ 
 ------------------------------------------------ */
 
-/* Typography ---------------------------------- */
-
 html {
     scroll-behavior: smooth;
 }
+
+.screen-reader-text {
+  border: 0;
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* Typography ---------------------------------- */
 
 body {
     font-family: "Saira", sans-serif;
@@ -106,9 +118,8 @@ a:focus {
 
 header {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
@@ -118,8 +129,15 @@ header {
     z-index: 3;
 }
 
-.site-name {
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 20px;
+    gap: 20px;
+}
+
+.logo a {
     padding: 3px;
 }
 
@@ -138,6 +156,10 @@ header {
         flex-wrap: wrap;
         flex-direction: row;
         padding-top: 10px;
+    }
+
+    .logo a {
+        padding: 10px;
     }
 
     .site-name {
