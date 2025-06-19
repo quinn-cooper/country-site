@@ -39,7 +39,6 @@ h1 {
     }
 }
 
-
 /* Blockquote ----- */
 
 .quote {
@@ -87,16 +86,13 @@ h1 {
 
     .terraforming1 {
         display: grid;
-        justify-self: center;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.5fr 1fr;
         margin: 20px 40px 40px;
     }
 
     .terra1 {
         border-radius: 25px 0px 0px 25px;
-        display: grid;
-        justify-self: center;
-    }
+    } 
 
     .terra1-img {
         display: block;
@@ -143,16 +139,12 @@ h1 {
 
     .terraforming2 {
         display: grid;
-        justify-self: center;
-        /* align-self: center; */
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.5fr 1fr;
         margin: 20px 40px 40px;
     }
 
     .terra2 {
         border-radius: 25px 0px 0px 25px;
-        display: grid;
-        justify-self: center;
     }
 
     .terra2-img {
@@ -199,16 +191,12 @@ h1 {
 
     .terra-info {
         display: grid;
-        justify-self: center;
-        /* align-self: center; */
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.5fr 1fr;
         margin: 20px 40px 40px;
     }
 
     .terra-info-p2 {
         border-radius: 25px 0px 0px 25px;
-        display: grid;
-        justify-self: center;
     }
 
     .terra-info-img {
@@ -256,16 +244,12 @@ h1 {
 
     .today {
         display: grid;
-        justify-self: center;
-        /* align-self: center; */
-        grid-template-columns: 2fr 1fr;
-        margin: 20px 40px;
+        grid-template-columns: 2.5fr 1fr;
+        margin: 20px 40px 40px;
     }
 
     .today-p2 {
         border-radius: 25px 0px 0px 25px;
-        display: grid;
-        justify-self: center;
     }
 
     .today-img {
