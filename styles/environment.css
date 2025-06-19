@@ -22,20 +22,22 @@
 # BASE------------------------------------------ 
 ------------------------------------------------ */
 
+/* Accessibility ---------------------------------- */
+
 html {
     scroll-behavior: smooth;
 }
 
 .screen-reader-text {
-  border: 0;
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  word-wrap: normal !important;
+    border: 0;
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
 }
 
 /* Typography ---------------------------------- */
@@ -68,6 +70,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     margin-top: 10px;
+    margin-bottom: 0;
     text-align: left;
     margin-left: 20px;
 }
@@ -143,7 +146,6 @@ header {
 
 .nav-menu ul {
     list-style: none;
-    /* margin-right: 20px; */
 }
 
 .nav-menu a {
@@ -158,11 +160,6 @@ header {
         flex-direction: row;
         justify-content: space-between;
         padding-top: 10px;
-
-
-        /* flex-wrap: wrap;
-        flex-direction: row; */
-        /* padding-top: 10px; */
     }
 
     .logo {
@@ -259,13 +256,14 @@ h1 {
     .terraforming1 {
         display: grid;
         justify-self: center;
-        /* align-self: center; */
         grid-template-columns: 2fr 1fr;
         margin: 20px 40px 40px;
     }
 
     .terra1 {
         border-radius: 25px 0px 0px 25px;
+        display: grid;
+        justify-self: center;
     }
 
     .terra1-img {
@@ -321,6 +319,8 @@ h1 {
 
     .terra2 {
         border-radius: 25px 0px 0px 25px;
+        display: grid;
+        justify-self: center;
     }
 
     .terra2-img {
@@ -375,6 +375,8 @@ h1 {
 
     .terra-info-p2 {
         border-radius: 25px 0px 0px 25px;
+        display: grid;
+        justify-self: center;
     }
 
     .terra-info-img {
@@ -430,6 +432,8 @@ h1 {
 
     .today-p2 {
         border-radius: 25px 0px 0px 25px;
+        display: grid;
+        justify-self: center;
     }
 
     .today-img {
@@ -443,6 +447,35 @@ h1 {
     }
 }
 
+/* Social Media Icons ----- */
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 20;
+    padding-left: 0;
+    gap: 30px;
+}
+
+.social-links a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+@media (min-width: 50em) {
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
 /* Footer -------------------------------------*/
 
 footer {
@@ -453,7 +486,6 @@ footer {
     justify-content: space-between;
     background-color: #000001;
     color: white;
-    margin-top: 40px;
     right: 0;
     left: 0;
 }

@@ -22,6 +22,8 @@
 # BASE------------------------------------------ 
 ------------------------------------------------ */
 
+/* Accessibility ---------------------------------- */
+
 html {
     scroll-behavior: smooth;
 }
@@ -68,6 +70,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     margin-top: 10px;
+    margin-bottom: 0;
     text-align: left;
     margin-left: 20px;
 }
@@ -243,13 +246,14 @@ h1 {
     .etymology {
         display: grid;
         justify-self: center;
-        /* align-self: center; */
         grid-template-columns: 2fr 1fr;
         margin: 20px 40px 40px;
     }
 
     .grid1-text {
         border-radius: 25px 0px 0px 25px;
+        display: grid;
+        justify-self: center;
     }
 
     .grid1-img {
@@ -282,8 +286,6 @@ h1 {
 }
 
 .grid2-img {
-    /* height: 100%;
-    object-position: 60% 90%; */
     display: block;
     width: 100%;
     height: auto;
@@ -298,13 +300,14 @@ h1 {
     .hadley-ripley {
         display: grid;
         justify-self: center;
-        /* align-self: center; */
         grid-template-columns: 2fr 1fr;
         margin: 20px 40px;
     }
 
     .grid2-text {
         border-radius: 25px 0px 0px 25px;
+        display: grid;
+        justify-self: center;
     }
 
     .grid2-img {
@@ -318,6 +321,36 @@ h1 {
     }
 }
 
+/* Social Media Icons ----- */
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 20;
+    padding-left: 0;
+    gap: 30px;
+}
+
+.social-links a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+@media (min-width: 50em) {
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+
 /* Footer -------------------------------------*/
 
 footer {
@@ -328,7 +361,6 @@ footer {
     justify-content: space-between;
     background-color: #000001;
     color: white;
-    margin-top: 40px;
     right: 0;
     left: 0;
 }
