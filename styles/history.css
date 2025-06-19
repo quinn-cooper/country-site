@@ -29,15 +29,15 @@ html {
 }
 
 .screen-reader-text {
-  border: 0;
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  word-wrap: normal !important;
+    border: 0;
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
 }
 
 /* Typography ---------------------------------- */
@@ -161,11 +161,6 @@ header {
         flex-direction: row;
         justify-content: space-between;
         padding-top: 10px;
-
-
-        /* flex-wrap: wrap;
-        flex-direction: row; */
-        /* padding-top: 10px; */
     }
 
     .logo {
@@ -230,8 +225,6 @@ h1 {
 }
 
 .grid1-img {
-    /* height: 100%;
-    object-position: 60% 90%; */
     display: block;
     width: 100%;
     height: auto;

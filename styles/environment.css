@@ -49,6 +49,7 @@ body {
     line-height: 1.5;
     max-width: 100%;
     background-color: #271228;
+    /* overflow-x: hidden; */
 }
 
 h1,
@@ -76,7 +77,7 @@ h2 {
 }
 
 p {
-    max-width: fit-content;
+    /* max-width: fit-content; */
     margin: 10px 20px;
 }
 
@@ -121,6 +122,7 @@ a:focus {
 
 header {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -146,6 +148,7 @@ header {
 
 .nav-menu ul {
     list-style: none;
+    width: min-content;
 }
 
 .nav-menu a {
@@ -196,8 +199,9 @@ h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 20px;
     padding-top: 150px;
+    /* width: min-content; */
 }
 
 @media (min-width: 50em) {
@@ -218,7 +222,7 @@ h1 {
 @media (min-width: 50em) {
     .quote {
         text-align: center;
-        margin: 0 70px;
+        margin: 0 20px;
     }
 }
 
