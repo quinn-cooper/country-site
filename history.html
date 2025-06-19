@@ -5,43 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acheron</title>
+
+    <!-- Header font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize-fwd.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/history.css">
 </head>
 
 <body>
 
-    <header id="top">
+    <header>
 
-        <div>
+        <a href="index.html" class="site-name">Acheron</a>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="environment.html">Environment</a></li>
-                    <li><a href="credits.html">Credits</a></li>
-                </ul>
-
-            </nav>
-
-        </div>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="environment.html">Environment</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
 
     </header>
 
-    <main>
+    <main id="top">
 
-            <h1>History</h1>
+        <h1>History</h1>
 
-        <div>
-
-            <article>
+        <div class="etymology">
+            <article class="grid1-text">
                 <h2>Etymology</h2>
                 <p>Acheron received its current name by the humans who settled there. The name may be a reference to the
                     river Acheron (“the river of woe”) in the underworld from Greek mythology, where souls of the dead
                     were carried across. In Dante's Inferno, the Acheron River forms a border around Hell.</p>
-                    <img src="images/space-traveler-closeup-resize.jpg" alt="close up image of space traveler">
             </article>
+            <img src="images/space-traveler-closeup-resize.jpg" alt="close up image of space traveler" class="grid1-img">
 
             <article>
                 <h2>Hadley's Hope</h2>
@@ -51,7 +61,7 @@
                     destroyed the settlement, with Rebecca “Newt” Jorden being the sole survivor. Although Acheron has
                     no human settlements today, the efforts of Hadley's Hope showed that it can be done. Their legacy
                     lives on. </p>
-                    <img src="images/green-tone-hand-resize.jpg" alt="hand reaching out">
+                <img src="images/green-tone-hand-resize.jpg" alt="hand reaching out">
             </article>
 
             <article>
@@ -61,18 +71,18 @@
                     2179, she joined a mission to investigate the disappearance of Hadley's Hope. Ripley risked
                     everything to save the child and only survivor of the colony. Her life ended in self-sacrifice, so
                     that others could live.</p>
-                    <img src="images/space-traveler-red-light-resize.jpg" alt="space traveler with shining red light">
+                <img src="images/space-traveler-red-light-resize.jpg" alt="space traveler with shining red light">
             </article>
 
         </div>
 
-        <p id="back-to-top"><a href="#top">Back to Top</a></p>
     </main>
 
 </body>
 
 <footer>
-    <p>&copy; Quinn Cooper | 2025</p>
-</footer>
+        <a href="#top">Back to Top</a>
+        <p>&copy; Quinn Cooper | 2025</p>
+    </footer>
 
 </html>

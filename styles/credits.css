@@ -54,7 +54,7 @@ h1 {
 
 p {
     max-width: fit-content;
-    margin-left: 20px;
+    margin: 10px 20px;
 }
 
 ul {
@@ -63,10 +63,6 @@ ul {
 }
 
 /* Links -------------------------------------*/
-
-footer a {
-    padding: 3px;
-}
 
 a:link {
     color: #eceee3;
@@ -78,8 +74,7 @@ a:visited {
     text-decoration: none;
 }
 
-header a:hover,
-footer a:hover {
+a:hover {
     color: #f8a618;
     border: 2px solid #6b35a1;
     text-decoration: none;
@@ -117,7 +112,7 @@ header {
 
 .site-name {
     margin-left: 20px;
-    padding: 10px;
+    padding: 3px;
 }
 
 .nav-menu ul {
@@ -155,31 +150,34 @@ header {
 
 /* Main ---------------------------------------*/
 
+/* H1 ----- */
+
 h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
-    padding-top: 100px;
+    margin: 0 auto;
+    padding-top: 150px;
 }
 
 @media (min-width: 50em) {
     h1 {
-        padding-top: 0;
+        padding-top: 40px;
     }
 }
 
-/* Credits Grid */
+/* Credits Tables ----- */
 
 div.credits {
     display: flex;
     flex-direction: column;
-    margin: 40px 20px 0;
 }
 
 .credits-media,
 .credits-info {
     margin: 0 20px;
-    display: block;
+    /* padding: 10px; */
+    padding: 15px 10px;
     box-sizing: border-box;
     border: 2px solid #bfd084;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
@@ -196,7 +194,11 @@ div.credits {
 }
 
 table {
-    table-layout: auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    width: 100%;
+    margin: 0;
 }
 
 tr,
@@ -205,23 +207,35 @@ td {
     padding: 10px;
 }
 
+th {
+    text-align: left;
+}
+
+.dark-purple {
+    background-color: #150A15;
+}
+
 @media (min-width: 50em) {
 
     div.credits {
-        display: grid;
-        justify-self: center;
-        grid-template-columns: 70%;
-        margin: 20px 40px;
+        display: block;
+        width: 60%;
+        margin: 20px auto;        
+    }
+
+    .credits-media,
+    .credits-info {
+        padding: 20px 0;
+        margin: 0 20px;
+        box-sizing: border-box;
     }
 
     .credits-media {
         border-radius: 25px 25px 0px 0px;
-        box-sizing: border-box;
     }
 
     .credits-info {
         border-radius: 0px 0px 25px 25px;
-        box-sizing: border-box;
     }
 
     table {
@@ -249,9 +263,13 @@ footer {
     justify-content: space-between;
     background-color: #000001;
     color: white;
-    margin-top: 20px;
+    margin-top: 40px;
     right: 0;
     left: 0;
+}
+
+footer a {
+    padding: 3px;
 }
 
 @media (min-width: 50em) {
@@ -259,5 +277,9 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+
+    footer a {
+        padding: 10px;
     }
 }

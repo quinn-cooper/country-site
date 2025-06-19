@@ -157,8 +157,6 @@ header {
 
 /* Main ---------------------------------------*/
 
-
-
 /* Banner ----- */
 
 .banner {
@@ -176,7 +174,6 @@ header {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
 }
-
 /* ------------ Neon effect from CSS Tricks */
 
 video {
@@ -320,11 +317,11 @@ video {
         box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
     }
 
-    div.grid-contact {
+    /* div.grid-contact {
         display: grid;
         justify-self: center;
         grid-template-columns: 2fr 1fr;
-    }
+    } */
 }
 
 /* Form ----- */
