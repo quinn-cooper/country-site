@@ -48,17 +48,6 @@ h6 {
     text-align: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Saira Semi Condensed", sans-serif;
-    font-weight: 550;
-    text-align: center;
-}
-
 h1 {
     font-size: 4.9rem;
     text-transform: uppercase;
@@ -175,7 +164,7 @@ h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 auto;
     padding-top: 150px;
 }
 
@@ -237,7 +226,7 @@ h1 {
         justify-self: center;
         /* align-self: center; */
         grid-template-columns: 2fr 1fr;
-        margin: 20px 40px;
+        margin: 20px 40px 40px;
     }
 
     .terra1 {
@@ -266,7 +255,8 @@ h1 {
 .terra2 {
     display: block;
     padding: 10px;
-    color: #bfd084;
+    color: #241023;
+    background-color: #bfd084;
     border: 2px solid #bfd084;
     border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
@@ -291,7 +281,7 @@ h1 {
         justify-self: center;
         /* align-self: center; */
         grid-template-columns: 2fr 1fr;
-        margin: 20px 40px;
+        margin: 20px 40px 40px;
     }
 
     .terra2 {
@@ -345,7 +335,7 @@ h1 {
         justify-self: center;
         /* align-self: center; */
         grid-template-columns: 2fr 1fr;
-        margin: 20px 40px;
+        margin: 20px 40px 40px;
     }
 
     .terra-info-p2 {
@@ -374,7 +364,8 @@ h1 {
 .today-p2 {
     display: block;
     padding: 10px;
-    color: #bfd084;
+    color: #241023;
+    background-color: #bfd084;
     border: 2px solid #bfd084;
     border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
