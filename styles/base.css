@@ -5,21 +5,9 @@
 # Typography
 # Links
 # Header
+# Social Media Icons
+# Footer
 ------------------------------------------------ */
-
-/* Accessibility ---------------------------------- */
-
-@media(prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: 
-    }
-}
-
-
-html {
-    scroll-behavior: smooth;
-}
 
 .screen-reader-text {
   border: 0;
@@ -31,6 +19,26 @@ html {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
 }
 
 /* Typography ---------------------------------- */
@@ -56,7 +64,7 @@ h6 {
 }
 
 h1 {
-    font-size: 4.9rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
@@ -68,7 +76,7 @@ h2 {
 }
 
 p {
-    max-width: fit-content;
+    /* max-width: fit-content; */
     margin: 10px 20px;
 }
 
@@ -91,7 +99,7 @@ a:visited {
 
 a:hover {
     color: #f8a618;
-    border: 2px solid #6b35a1;
+    border: 2px solid #f8a618;
     text-decoration: none;
 }
 
@@ -101,7 +109,7 @@ a:active {
 }
 
 a:focus {
-    color: #b376af;
+    color: #f8a618;
     text-decoration: none;
 }
 
@@ -139,7 +147,7 @@ header {
 .nav-menu a {
     text-decoration: none;
     padding: 3px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 @media (min-width: 50em) {
@@ -173,5 +181,64 @@ header {
 
     .nav-menu a {
         padding: 7px;
+    }
+}
+
+/* Social Media Icons ---------------------------------*/
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 20;
+    padding-left: 0;
+    gap: 30px;
+}
+
+.social-links a:hover {
+    border: none;
+    text-decoration: none;
+}
+
+@media (min-width: 50em) {
+    .social-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+/* Footer -------------------------------------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000001;
+    color: white;
+    right: 0;
+    left: 0;
+}
+
+footer a {
+    padding: 3px;
+}
+
+@media (min-width: 50em) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer a {
+        padding: 10px;
     }
 }

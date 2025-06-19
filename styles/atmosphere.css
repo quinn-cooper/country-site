@@ -27,9 +27,9 @@ h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 auto;
     padding-top: 150px;
-    /* width: min-content; */
+    
 }
 
 @media (min-width: 50em) {
