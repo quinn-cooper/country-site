@@ -114,6 +114,13 @@ h1 {
     border-radius: 25px 25px 0px 0px;
 }
 
+.grid2-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 0px 0px 25px 25px;
+}
+
 .grid2-text a:link {
     color: #66005E;
 }
@@ -138,13 +145,6 @@ h1 {
 .grid2-text a:focus {
     color: #f8a618;
     text-decoration: none;
-}
-
-.grid2-img {
-    width: 100%;
-    height: auto;
-    object-fit: fill;
-    border-radius: 0px 0px 25px 25px;
 }
 
 @media (min-width: 50em) {
