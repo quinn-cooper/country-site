@@ -34,7 +34,7 @@
 
 .banner h1 {
     position: absolute;
-    width: fit-content;
+    /* width: fit-content; */
     top: 120px;
     right: 0;
     left: 0;
@@ -42,7 +42,9 @@
     text-align: center;
     color: white;
     text-shadow: 0 0 10px #281227, 0 0 20px #281227, 0 0 30px rgb(8, 8, 8);
+    font-size: clamp(3rem, 4vw, 4rem);
 }
+
 /* ------------ Neon effect from CSS Tricks */
 
 video {
@@ -56,6 +58,7 @@ video {
 
 @media (min-width: 50em) {
     .banner h1 {
+        font-size: clamp(5rem, 4vw, 5.5rem);
         top: 80px;
     }
 

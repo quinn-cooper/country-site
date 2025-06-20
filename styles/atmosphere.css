@@ -38,6 +38,7 @@ h1 {
 @media (min-width: 50em) {
     h1 {
         padding-top: 80px;
+        font-size: clamp(5rem, 4vw, 5.5rem);
     }
 }
 

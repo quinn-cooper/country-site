@@ -37,6 +37,7 @@ h1 {
     h1 {
         padding-top: 80px;
         padding-bottom: 0;
+        font-size: clamp(5rem, 4vw, 5.5rem);
     }
 }
 

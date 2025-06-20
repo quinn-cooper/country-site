@@ -9,10 +9,12 @@
     - Typography
     - Links
     - Header
+    - Social Media Icons
     - Footer
 # Components
     - Header
     - Main
+        *H1
         *Table 1
         *Table 2
 ------------------------------------------------ */
@@ -20,14 +22,13 @@
 /* Main ---------------------------------------*/
 
 /* H1 ----- */
-
 h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
     margin: 0 20px; 
-    padding-bottom: 20px;
     padding-top: 120px;
+    padding-bottom: 20px;
     font-size: clamp(3rem, 4vw, 4rem);
 }
 
@@ -35,6 +36,7 @@ h1 {
     h1 {
         padding-top: 80px;
         padding-bottom: 0;
+        font-size: clamp(5rem, 4vw, 5.5rem);
     }
 }
 
