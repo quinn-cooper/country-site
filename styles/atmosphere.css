@@ -9,9 +9,12 @@
     - Typography
     - Links
     - Header
+    - Social Media Icons
+    - Footer
 # Components
     - Main
         *H1
+        *Blockquote
         *Grid - Before Terraforming
         *Grid - After Terraforming
         *Grid - What is Terraforming
@@ -20,7 +23,7 @@
 
 /* Main ---------------------------------------*/
 
-/* H1 ----- */
+/* H1 ---------- */
 
 h1 {
     color: white;
@@ -61,23 +64,24 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.terra1 {
+.terra1,
+.terra1-img {
     display: block;
-    padding: 10px;
-    color: #bfd084;
     border: 2px solid #bfd084;
-    border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
+.terra1 {
+    padding: 10px;
+    color: #bfd084;
+    border-radius: 25px 25px 0px 0px;
+}
+
 .terra1-img {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: fill;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 @media (min-width: 50em) {
@@ -175,8 +179,6 @@ h1 {
 }
 
 .terra-info-img {
-    /* height: 100%;
-    object-position: 60% 90%; */
     display: block;
     width: 100%;
     height: auto;
@@ -228,8 +230,6 @@ h1 {
 }
 
 .today-img {
-    /* height: 100%;
-    object-position: 60% 90%; */
     display: block;
     width: 100%;
     height: auto;

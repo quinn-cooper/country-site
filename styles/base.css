@@ -143,10 +143,6 @@ header {
     padding: 0 8px;
 }
 
-/* .site-name {
-    padding: 10px 0;
-} */
-
 .logo {
     display: flex;
     flex-direction: column;
@@ -208,7 +204,7 @@ header {
     }
 }
 
-/* Social Media Icons ---------------------------------*/
+/* Social Media Icons ------------------------------*/
 
 .social-links {
     list-style: none;

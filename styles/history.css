@@ -27,7 +27,7 @@ h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
-    margin: 0 20px; 
+    margin: 0 20px;
     padding-top: 120px;
     padding-bottom: 20px;
     font-size: clamp(3rem, 4vw, 4rem);
@@ -40,7 +40,6 @@ h1 {
     }
 }
 
-
 /* Grid - Etymology ----- */
 
 .etymology {
@@ -49,38 +48,37 @@ h1 {
     margin: 0 20px;
 }
 
-.grid1-text {
+.grid1-text,
+.grid1-img {
     display: block;
+    border: 2px solid #bfd084;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+}
+
+.grid1-text {
     padding: 10px;
     color: #bfd084;
-    border: 2px solid #bfd084;
     border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 .grid1-img {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: fill;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 @media (min-width: 50em) {
 
     .etymology {
         display: grid;
-        justify-self: center;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.5fr 1fr;
         margin: 20px 40px 40px;
     }
 
     .grid1-text {
         border-radius: 25px 0px 0px 25px;
-        display: grid;
-        justify-self: center;
     }
 
     .grid1-img {
@@ -94,7 +92,7 @@ h1 {
     }
 }
 
-/* Grid - Hadley's Hope & Ellen Ripley ----- */
+/* Grid - Hadley's Hope ----- */
 
 .hadley-ripley {
     display: flex;
@@ -102,39 +100,63 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.grid2-text {
+.grid2-text,
+.grid2-img {
     display: block;
-    padding: 10px;
-    color: #241023;
-    background-color: #bfd084;
     border: 2px solid #bfd084;
-    border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
+.grid2-text {
+    padding: 10px;
+    color: #241023;
+    background-color: #bfd084;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.grid2-text a:link {
+    color: #66005E;
+}
+
+.grid2-text a:visited {
+    color: #10275B;
+    text-decoration: none;
+}
+
+.grid2-text a:hover {
+    color: #f8a618;
+    background-color: #1F3D00;
+    border: none;
+    text-decoration: none;
+}
+
+.grid2-text a:active {
+    color: #10275B;
+    text-decoration: none;
+}
+
+.grid2-text a:focus {
+    color: #f8a618;
+    text-decoration: none;
+}
+
 .grid2-img {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: fill;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 @media (min-width: 50em) {
 
     .hadley-ripley {
         display: grid;
-        justify-self: center;
-        grid-template-columns: 2fr 1fr;
-        margin: 20px 40px;
+        grid-template-columns: 2.5fr 1fr;
+        margin: 20px 40px 40px;
     }
 
     .grid2-text {
         border-radius: 25px 0px 0px 25px;
-        display: grid;
-        justify-self: center;
     }
 
     .grid2-img {
@@ -142,68 +164,8 @@ h1 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 30% 20%;
+        object-position: 35% 50%;
         border-radius: 0px 25px 25px 0px;
         box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
-    }
-}
-
-/* Social Media Icons ----- */
-
-.social-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
-    margin-left: 20;
-    padding-left: 0;
-    gap: 30px;
-}
-
-.social-links a:hover {
-    border: none;
-    text-decoration: none;
-}
-
-@media (min-width: 50em) {
-    .social-links {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: center;
-        gap: 50px;
-    }
-}
-
-
-/* Footer -------------------------------------*/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #000001;
-    color: white;
-    right: 0;
-    left: 0;
-}
-
-footer a {
-    padding: 3px;
-}
-
-@media (min-width: 50em) {
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    footer a {
-        padding: 10px;
     }
 }
