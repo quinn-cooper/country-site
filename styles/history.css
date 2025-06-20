@@ -8,14 +8,14 @@
 # Base (Base.css)
     - Typography
     - Links
-# Components
     - Header
+    - Footer
+# Components
     - Main
         *H1
         *Grid - Etymology
         *Grid - Hadley's Hope
         *Grid - Ellen Ripley
-    - Footer 
     ------------------------------------------------ */
 
 
@@ -28,13 +28,15 @@ h1 {
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
     margin: 0 20px; 
-    padding-top: 150px;
+    padding-top: 120px;
+    padding-bottom: 20px;
     font-size: clamp(3rem, 4vw, 4rem);
 }
 
 @media (min-width: 50em) {
     h1 {
-        padding-top: 60px;
+        padding-top: 80px;
+        padding-bottom: 0;
     }
 }
 
@@ -44,7 +46,7 @@ h1 {
 .etymology {
     display: flex;
     flex-wrap: wrap;
-    margin: 40px 20px 0;
+    margin: 0 20px;
 }
 
 .grid1-text {
