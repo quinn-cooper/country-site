@@ -40,26 +40,20 @@
     margin: 0 auto;
     text-align: center;
     color: white;
-    text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
+    text-shadow: 0 0 10px #281227, 0 0 20px #281227, 0 0 30px rgb(8, 8, 8);
 }
 
 /* ------------ Neon effect from CSS Tricks */
 
-/* video {
-    object-fit: cover;
-    display: block; 
-    object-position: 50% 95%;
-    width: 100%;
-    height: 20rem;
-}  */
-
 video {
     display: block;
-    object-fit: cover;
-    object-position: 50% 10%;
+    object-fit: contain;
+    object-position: 50% 40%;
 	width: 100%;
-	height: 20rem;
+	height: auto;
+    padding-top: 7rem;
 }
+
 
 @media (min-width: 50em) {
     .banner h1 {
@@ -72,6 +66,7 @@ video {
         display: block;
         width: 100%;
         height: 30rem;
+        padding-top: 0;
     }
 }
 
