@@ -163,6 +163,7 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 15px 0;
     }
 
     .site-name {
@@ -185,6 +186,8 @@ header {
         list-style: none;
         margin-top: 5px;
         margin-bottom: 5px;
+        gap: 20px;
+        margin-left: 15px;
     }
 
     .nav-menu a {

@@ -31,7 +31,7 @@ h1 {
     text-align: center;
     margin: 0 20px; 
     padding-top: 120px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-size: clamp(3rem, 4vw, 4rem);
 }
 
@@ -65,37 +65,27 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.terra1,
-.terra1-img {
+.terra1-img, 
+.terra1 {
     display: block;
     border: 2px solid #bfd084;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
-}
-
-.terra1 {
-    padding: 10px;
-    color: #bfd084;
-    border-radius: 25px 25px 0px 0px;
 }
 
 .terra1-img {
     width: 100%;
     height: auto;
     object-fit: fill;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.terra1 {
+    padding: 10px;
+    color: #bfd084;
     border-radius: 0px 0px 25px 25px;
 }
 
 @media (min-width: 50em) {
-
-    .terraforming1 {
-        display: grid;
-        grid-template-columns: 2.5fr 1fr;
-        margin: 20px 40px 40px;
-    }
-
-    .terra1 {
-        border-radius: 25px 0px 0px 25px;
-    } 
 
     .terra1-img {
         display: block;
@@ -103,9 +93,19 @@ h1 {
         height: 100%;
         object-fit: cover;
         object-position: 35% 50%;
-        border-radius: 0px 25px 25px 0px;
+        border-radius: 25px 0px 0px 25px;
         box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
     }
+
+    .terraforming1 {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        margin: 40px 40px 40px;
+    }
+
+    .terra1 {
+        border-radius: 0px 25px 25px 0px;
+    } 
 }
 
 /* Grid - After ----- */
@@ -127,8 +127,6 @@ h1 {
 }
 
 .terra2-img {
-    /* height: 100%;
-    object-position: 60% 90%; */
     display: block;
     width: 100%;
     height: auto;
@@ -170,20 +168,20 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.terra-info-p2 {
-    display: block;
-    padding: 10px;
-    color: #bfd084;
-    border: 2px solid #bfd084;
-    border-radius: 25px 25px 0px 0px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
-}
-
 .terra-info-img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: fill;
+    border: 2px solid #bfd084;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+}
+
+.terra-info-p2 {
+    display: block;
+    padding: 10px;
+    color: #bfd084;
     border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
@@ -193,12 +191,8 @@ h1 {
 
     .terra-info {
         display: grid;
-        grid-template-columns: 2.5fr 1fr;
+        grid-template-columns: 1fr 2.5fr;
         margin: 20px 40px 40px;
-    }
-
-    .terra-info-p2 {
-        border-radius: 25px 0px 0px 25px;
     }
 
     .terra-info-img {
@@ -207,8 +201,12 @@ h1 {
         height: 100%;
         object-fit: cover;
         object-position: 35% 50%;
-        border-radius: 0px 25px 25px 0px;
+        border-radius: 25px 0px 0px 25px;
         box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+    }
+
+    .terra-info-p2 {
+        border-radius: 0px 25px 25px 0px;
     }
 }
 
