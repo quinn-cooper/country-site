@@ -220,7 +220,6 @@ input[type=submit] {
 input[type=submit] {
     width: 50%;
     padding: 10px;
-    align-self: left;
 }
 
 @media (min-width: 50em) {

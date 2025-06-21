@@ -204,7 +204,6 @@ header {
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
-    margin-left: 20;
     padding-left: 0;
     gap: 30px;
 }
