@@ -6,6 +6,7 @@
     - Box Sizing
     - Media Width
 # Base (Base.css)
+    - Accessibility
     - Typography
     - Links
     - Header
@@ -29,9 +30,8 @@ h1 {
     color: white;
     text-shadow: 0 0 10px #c7da3b, 0 0 20px #cfdc70;
     text-align: center;
-    margin: 0 20px; 
+    margin: 0 20px;
     padding-top: 120px;
-    /* padding-bottom: 20px; */
     font-size: clamp(3rem, 4vw, 4rem);
 }
 
@@ -65,7 +65,7 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.terra1-img, 
+.terra1-img,
 .terra1 {
     display: block;
     border: 2px solid #bfd084;
@@ -105,7 +105,7 @@ h1 {
 
     .terra1 {
         border-radius: 0px 25px 25px 0px;
-    } 
+    }
 }
 
 /* Grid - After ----- */
@@ -116,26 +116,26 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.terra2 {
+.terra2,
+.terra2-img {
     display: block;
+    border: 2px solid #bfd084;
+    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
+}
+
+.terra2 {
     padding: 10px;
     color: #241023;
     background-color: #bfd084;
-    border: 2px solid #bfd084;
     border-radius: 25px 25px 0px 0px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 .terra2-img {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: fill;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
-
 
 @media (min-width: 50em) {
 
@@ -168,23 +168,24 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.terra-info-img {
+.terra-info-img,
+.terra-info-p2 {
     display: block;
-    width: 100%;
-    height: auto;
-    object-fit: fill;
     border: 2px solid #bfd084;
-    border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
+.terra-info-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 25px 25px 0px 0px;
+}
+
 .terra-info-p2 {
-    display: block;
     padding: 10px;
     color: #bfd084;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 @media (min-width: 50em) {
@@ -218,24 +219,25 @@ h1 {
     margin: 40px 20px 0;
 }
 
-.today-p2 {
+.today-p2,
+.today-img {
     display: block;
-    padding: 10px;
-    color: #241023;
-    background-color: #bfd084;
     border: 2px solid #bfd084;
-    border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
+.today-p2 {
+    padding: 10px;
+    color: #241023;
+    background-color: #bfd084;
+    border-radius: 25px 25px 0px 0px;
+}
+
 .today-img {
-    display: block;
     width: 100%;
     height: auto;
     object-fit: fill;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 @media (min-width: 50em) {
@@ -260,4 +262,3 @@ h1 {
         box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
     }
 }
-

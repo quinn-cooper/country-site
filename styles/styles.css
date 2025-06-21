@@ -10,6 +10,7 @@
     - Typography
     - Links
     - Header
+    - Social Media Icons
     - Footer
 # Components
     - Main
@@ -17,6 +18,7 @@
         *Blockquote
         *Grid - Welcome
         *Grid - Contact
+            > Form
 ------------------------------------------------ */
 
 /* ---------------------------------------------
@@ -49,8 +51,8 @@ video {
     display: block;
     object-fit: contain;
     object-position: 50% 40%;
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
     padding-top: 5rem;
 }
 
@@ -96,7 +98,6 @@ video {
 
 .grid-info1,
 .grid-info2 {
-    /* margin: 0 20px; */
     padding: 10px;
     box-sizing: border-box;
     border: 2px solid #bfd084;
@@ -124,16 +125,18 @@ video {
         margin: 0 40px 20px 40px;
     }
 
-    .grid-info1 {
-        border-radius: 25px 0px 0px 25px;
+    .grid-info1,
+    .grid-info2 {
         margin: 20px 0px;
         box-sizing: border-box;
     }
 
+    .grid-info1 {
+        border-radius: 25px 0px 0px 25px;
+    }
+
     .grid-info2 {
         border-radius: 0px 25px 25px 0px;
-        margin: 20px 0px;
-        box-sizing: border-box;
     }
 }
 
@@ -145,25 +148,26 @@ video {
     margin: 40px 20px 0;
 }
 
-.contact-us {
+.contact-us,
+.home-image {
     display: block;
-    padding: 10px;
-    color: #241023;
-    background-color: #bfd084;
     border: 2px solid #bfd084;
-    border-radius: 25px 25px 0px 0px;
     box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
+.contact-us {
+    padding: 10px;
+    color: #241023;
+    background-color: #bfd084;
+    border-radius: 25px 25px 0px 0px;
+}
+
 .home-image {
-    display: block;
     width: 100%;
     height: 350px;
     object-fit: cover;
     object-position: 50% 20%;
-    border: 2px solid #bfd084;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 0 3px #fff, 0 0 6px #cae75f, 0 0 10px #cae75f, 0 0 12px #cae75f;
 }
 
 @media (min-width: 50em) {
@@ -178,7 +182,7 @@ video {
     .contact-us {
         border-radius: 25px 0px 0px 25px;
         display: grid;
-        justify-self: center; 
+        justify-self: center;
     }
 
     .home-image {
@@ -242,5 +246,6 @@ input[type=submit] {
     input[type=text]:focus {
         border: 2px dotted #c17d08;
     }
-    /* ---------------- Form styles from W3Schools */
+
+    /* --------------- Form styles from W3Schools */
 }
